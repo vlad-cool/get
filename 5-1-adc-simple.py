@@ -24,6 +24,7 @@ def adc():
         if 1 - GPIO.input(comp):
             GPIO.output(dac, 0)
             return i
+    return 256
 
 
 try:

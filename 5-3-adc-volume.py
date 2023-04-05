@@ -26,6 +26,7 @@ def adc_simple():
         if 1 - GPIO.input(comp):
             GPIO.output(dac, 0)
             return i
+    return 256
 
 def adc_sar():
     le = 0
