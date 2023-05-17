@@ -62,10 +62,10 @@ try:
         res_v.append(round(re * 3.3/256, 4))
     plt.plot(res_v)
     plt.show()
-    with open("data.txt", "w") as f:
+    with open("data1.txt", "w") as f:
         for dat in res:
             f.write(f"{dat}\n")
-    with open("settings.txt", "w") as f:
+    with open("settings1.txt", "w") as f:
         f.write(f"{len(res) / duration}\n")
         f.write(f"{3.3 / 255}\n")
     print(f"experiment duration: {round(duration)} seconds")
